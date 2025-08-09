@@ -7,20 +7,7 @@ import React from "react";
 
 const DashboardPage = () => {
 	return (
-		<div className="root-layout">
-			<nav>
-				<Link
-					href={"/"}
-					className="flex items-center gap-2">
-					<Image
-						src={"/logo.svg"}
-						alt="logo"
-						width={38}
-						height={38}
-					/>
-					<h2 className="text-primary-100">Inwise</h2>
-				</Link>
-			</nav>
+		<>
 			<section className="card-cta">
 				<div className="flex flex-col gap-6 max-w-lg">
 					<h2>Get Interview Ready with AI-Powered Practice & feedback</h2>
@@ -69,7 +56,7 @@ const DashboardPage = () => {
 					{/* <p>There are no interviews available</p> */}
 				</div>
 			</section>
-		</div>
+		</>
 	);
 };
 
