@@ -164,81 +164,7 @@ export default function Home() {
 		<>
 			<div className="min-h-screen bg-gray-900 text-white">
 				{/* Navigation */}
-				<nav className="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
-					<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-						<div className="flex justify-between items-center h-16">
-							<div className="flex items-center space-x-2">
-								<div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-									<Brain className="w-5 h-5 text-white" />
-								</div>
-								<span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-									Inwise
-								</span>
-							</div>
-
-							{/* Desktop Menu */}
-							<div className="hidden md:flex items-center space-x-8">
-								<a
-									href="#features"
-									className="text-gray-300 hover:text-white transition-colors">
-									Features
-								</a>
-								<a
-									href="#testimonials"
-									className="text-gray-300 hover:text-white transition-colors">
-									Testimonials
-								</a>
-								<a
-									href="#pricing"
-									className="text-gray-300 hover:text-white transition-colors">
-									Pricing
-								</a>
-								<button className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors">
-									<Link href={"/sign-up"}>Get Started</Link>
-								</button>
-							</div>
-
-							{/* Mobile Menu Button */}
-							<div className="md:hidden">
-								<button
-									onClick={() => setIsMenuOpen(!isMenuOpen)}
-									className="text-gray-300 hover:text-white">
-									{isMenuOpen ? (
-										<X className="w-6 h-6" />
-									) : (
-										<Menu className="w-6 h-6" />
-									)}
-								</button>
-							</div>
-						</div>
-					</div>
-
-					{/* Mobile Menu */}
-					{isMenuOpen && (
-						<div className="md:hidden bg-gray-800 border-t border-gray-700">
-							<div className="px-2 pt-2 pb-3 space-y-1">
-								<a
-									href="#features"
-									className="block px-3 py-2 text-gray-300 hover:text-white">
-									Features
-								</a>
-								<a
-									href="#testimonials"
-									className="block px-3 py-2 text-gray-300 hover:text-white">
-									Testimonials
-								</a>
-								<a
-									href="#pricing"
-									className="block px-3 py-2 text-gray-300 hover:text-white">
-									Pricing
-								</a>
-								<button className="w-full text-left bg-blue-600 hover:bg-blue-700 px-3 py-2 rounded-lg mt-2">
-									Get Started
-								</button>
-							</div>
-						</div>
-					)}
-				</nav>
+				
 
 				{/* Hero Section */}
 				<section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
@@ -485,6 +411,25 @@ export default function Home() {
 				<footer className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-900 border-t border-gray-800">
 					<div className="max-w-7xl mx-auto">
 						<div className="flex flex-col md:flex-row justify-between items-center">
+							<div className="flex items-center space-x-2 mb-4 md:mb-0">
+								<div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+									<Brain className="w-5 h-5 text-white" />
+								</div>
+								<span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+									Inwise
+								</span>
+							</div>
+							<div className="text-gray-400 text-sm">
+								© 2025 Inwise. All rights reserved.
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</>
+	);
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ol md:flex-row justify-between items-center">
 							<div className="flex items-center space-x-2 mb-4 md:mb-0">
 								<div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
 									<Brain className="w-5 h-5 text-white" />
